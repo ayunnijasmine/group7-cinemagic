@@ -29,7 +29,7 @@ class MoviesTableSeeder extends Seeder
             ['id' => 12, 'title' => "King Kong", 'director' => "Brendon Cronberg", 'category' => "Horror", 'release' => 2020],
             ['id' => 13, 'title' => "A Secret Love", 'director' => "Chris Bolan", 'category' => "Documentary", 'release' => 2020],
             ['id' => 14, 'title' => "Black Panther", 'director' => "Ryan Coogler", 'category' => "Action", 'release' => 2018],
-            ['id' => 15, 'title' => "Incredibles 2", 'director' => "Brad Bird", 'category' => "Action", 'release' => 2018],
+            ['id' => 15, 'title' => "Incredibles 2", 'director' => "Brad Bird", 'category' => "Action", 'release' => 2018]
         ]);
     }
 }
