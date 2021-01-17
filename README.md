@@ -1,9 +1,7 @@
 Group 7: Cinemagic
 
-INFO 3305 Web Application Development
-Section 2
+INFO 3305 (Section 2)
 Sem 1, 2020/2021
-Lecturer: Dr. Marini Othman
 
 Group Members:
 1. Ayunni Jasmine (1816714)
