@@ -9,8 +9,30 @@ use App\Models\Movie;
 class MovieController extends Controller
 {
     public function moviez() {
-        $data = Movie::all();
-        return view('movie', ['movies'=>$data]);
+        $movies = Movie::orderBy('title')
+                // ->where('status', 'true')
+                ->get();
+
+        return view('movie')->with('movies', $movies);
+    }
+
+    //flip function
+    public function flip($id){
+        $flip = Movie::find($id);
+        
+        if ($flip->status == 'true'){
+            $flip->status = 'false';
+            $flip->save();
+        }
+        else{
+            $flip->status = 'true';
+            $flip->save();
+        }
+
+        $movies = Movie::orderBy('title')
+                ->where('status', 'true')
+                ->get();
+        
+        return view('movie')->with('movies', $movies);
     }
 }
-
